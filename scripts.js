@@ -10,7 +10,7 @@ async function fetchData() {
         if (!response.ok) {
             throw new Error("Network response not ok");
         }
-        const data = await response.json();  // Changed to const
+        const data = await response.json();
         console.log("dataa", data)
         return data.slip;
 
@@ -28,4 +28,3 @@ async function getAdvice() {
 }
 
 changer.addEventListener('click', getAdvice);
-getAdvice();  // Initial load
