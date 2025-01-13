@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              boxShadow: {
+                glow: "0 0 25px hsl(150, 100%, 66%)",
+              }
+            }
+          }
+        }
+      </script>
+  </head>
+  <body>
+    <section>
+      <div class="bg-[#202632] min-h-full flex items-center">
+        <div
+          class="relative bg-[#313A49] min-h-10 w-96 mx-auto rounded-xl p-8 text-center"
+        >
+          <p class="text-[#52FEAA] text-xs spacing ">ADVICE <span id="num"> #117</span></p>
+          <div>
+            <p id="advice" class="text-white text-xl font-semibold mt-4 font-[Manrope] text-ellipsis overflow-hidden hover:text-clip">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
+          </div>
+
+          <div class="mt-6">
+            <img src="/assets/pattern-divider-desktop.svg" alt="">
+          </div>
+          <button onclick="getAdvice" id="changer" class="rounded-full bg-[#52FEAA] flex items-center w-10 h-10 absolute bottom-[-18px] right-[172px] cursor-pointer  hover:shadow-glow duration-300">
+            <img src="/assets/icon-dice.svg" alt="" class="w-4 mx-auto">
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="scripts.js"></script>
+</html>
